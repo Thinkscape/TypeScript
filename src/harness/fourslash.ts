@@ -2064,6 +2064,7 @@ namespace FourSlash {
             });
         }
 
+        //!!!
         public verifyBraceCompletionAtPosition(negative: boolean, openingBrace: string) {
 
             const openBraceMap = ts.createMap<ts.CharacterCodes>({
@@ -2095,6 +2096,7 @@ namespace FourSlash {
             }
         }
 
+        //!!!
         public verifyMatchingBracePosition(bracePosition: number, expectedMatchPosition: number) {
             const actual = this.languageService.getBraceMatchingAtPosition(this.activeFile.fileName, bracePosition);
 

@@ -1538,6 +1538,7 @@ namespace ts {
             return OutliningElementsCollector.collectElements(sourceFile);
         }
 
+        //!!!
         function getBraceMatchingAtPosition(fileName: string, position: number) {
             const sourceFile = syntaxTreeCache.getCurrentSourceFile(fileName);
             const result: TextSpan[] = [];
@@ -1636,6 +1637,7 @@ namespace ts {
             return JsDoc.getDocCommentTemplateAtPosition(getNewLineOrDefaultFromHost(host), syntaxTreeCache.getCurrentSourceFile(fileName), position);
         }
 
+        //!!!
         function isValidBraceCompletionAtPosition(fileName: string, position: number, openingBrace: number): boolean {
             // '<' is currently not supported, figuring out if we're in a Generic Type vs. a comparison is too
             // expensive to do during typing scenarios
