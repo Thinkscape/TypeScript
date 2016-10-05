@@ -5954,7 +5954,15 @@ interface KeyboardEventInit extends EventModifierInit {
     code?: string;
     key?: string;
     location?: number;
+    ctrlKey?: boolean;
+    shiftKey?: boolean;
+    altKey?: boolean;
+    metaKey?: boolean;
     repeat?: boolean;
+    isComposing?: boolean;
+    charCode?: number;
+    keyCode?: number;
+    which?: number;
 }
 
 interface LongRange {
